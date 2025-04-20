@@ -1,0 +1,1064 @@
+<!DOCTYPE html><html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<link href="css/widgetly.css" type="text/css" rel="stylesheet"><link href="css/animations125.css" type="text/css" rel="stylesheet"></head>
+
+
+<body><!-- FLOATING BAR -->
+<div id="floatingBar">
+  <div class="bar-inner">
+    <span class="bar-text">🎓 Get ChatGPT Certified</span>
+    <span class="bar-timer">Offer expires in <span id="countdown">10:00</span></span>
+    <a href="www.link.com" class="bar-btn">Claim Now For $49!</a>
+  </div>
+</div>
+
+<style>
+#floatingBar {
+  display: none;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #1a1a1a;
+  color: #fff;
+  font-family: Arial, sans-serif;
+  padding: 12px 16px;
+  z-index: 9999;
+  box-shadow: 0 -2px 10px rgba(0,0,0,0.2);
+}
+.bar-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.bar-text {
+  font-size: 16px;
+  font-weight: bold;
+}
+.bar-timer {
+  font-size: 14px;
+  color: #ffcc00;
+}
+.bar-btn {
+  background-color: #ff6600;
+  color: white;
+  padding: 10px 16px;
+  font-size: 14px;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 5px;
+  white-space: nowrap;
+}
+@media screen and (max-width: 600px) {
+  .bar-inner {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .bar-btn {
+    width: 100%;
+    text-align: center;
+  }
+}
+</style>
+
+<script>
+// Show after scrolling down 200px
+window.addEventListener('scroll', function() {
+  const bar = document.getElementById('floatingBar');
+  if (window.scrollY > 200) {
+    bar.style.display = 'block';
+  }
+});
+
+// Countdown timer logic
+let timeLeft = 600; // 10 minutes in seconds
+const countdownEl = document.getElementById('countdown');
+const interval = setInterval(() => {
+  let minutes = Math.floor(timeLeft / 60);
+  let seconds = timeLeft % 60;
+  countdownEl.textContent = `${minutes}:${seconds < 10 ? '0' : ''}${seconds}`;
+  if (timeLeft <= 0) {
+    clearInterval(interval);
+    countdownEl.textContent = "00:00";
+  }
+  timeLeft--;
+}, 1000);
+</script>
+
+<meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"><!-- <meta name="viewport" content="width=550, user-scalable=no" "=""/> --><meta name="theme-color" content="#ffffff"><!--Start SEO Tags--><meta name="description" content="Entertainment Today"><!--Start Social Tags--><meta property="og:title" content="Entertainment Today"><meta property="og:description" content="Entertainment Today"><!--Start HTML5 Tags-->
+
+<title>Entertainment Today</title>
+<link href="css/styles.css" rel="stylesheet" data-inprogress=""><!-- Font Awesome -->
+<link href="css/fontawesome-all.css" rel="stylesheet" data-inprogress=""><!-- Google Fonts -->
+<link href="css/bootstrap.css" rel="stylesheet">
+<style media="" data-href="https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic">
+/*# sourceURL=https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic */
+/*@ sourceURL=https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic */
+/* cyrillic-ext */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: italic;
+  font-weight: 300;
+  src: local('Open Sans Light Italic'), local('OpenSans-LightItalic'), url(fonts/memnYaGs126MiZpBA-UFUKWyV9hmIqOjjg.woff2) format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: italic;
+  font-weight: 300;
+  src: local('Open Sans Light Italic'), local('OpenSans-LightItalic'), url(fonts/memnYaGs126MiZpBA-UFUKWyV9hvIqOjjg.woff2) format('woff2');
+  unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* greek-ext */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: italic;
+  font-weight: 300;
+  src: local('Open Sans Light Italic'), local('OpenSans-LightItalic'), url(fonts/memnYaGs126MiZpBA-UFUKWyV9hnIqOjjg.woff2) format('woff2');
+  unicode-range: U+1F00-1FFF;
+}
+/* greek */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: italic;
+  font-weight: 300;
+  src: local('Open Sans Light Italic'), local('OpenSans-LightItalic'), url(fonts/memnYaGs126MiZpBA-UFUKWyV9hoIqOjjg.woff2) format('woff2');
+  unicode-range: U+0370-03FF;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: italic;
+  font-weight: 300;
+  src: local('Open Sans Light Italic'), local('OpenSans-LightItalic'), url(fonts/memnYaGs126MiZpBA-UFUKWyV9hkIqOjjg.woff2) format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: italic;
+  font-weight: 300;
+  src: local('Open Sans Light Italic'), local('OpenSans-LightItalic'), url(fonts/memnYaGs126MiZpBA-UFUKWyV9hlIqOjjg.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: italic;
+  font-weight: 300;
+  src: local('Open Sans Light Italic'), local('OpenSans-LightItalic'), url(fonts/memnYaGs126MiZpBA-UFUKWyV9hrIqM.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* cyrillic-ext */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: italic;
+  font-weight: 400;
+  src: local('Open Sans Italic'), local('OpenSans-Italic'), url(fonts/mem6YaGs126MiZpBA-UFUK0Udc1UAw.woff2) format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: italic;
+  font-weight: 400;
+  src: local('Open Sans Italic'), local('OpenSans-Italic'), url(fonts/mem6YaGs126MiZpBA-UFUK0ddc1UAw.woff2) format('woff2');
+  unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* greek-ext */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: italic;
+  font-weight: 400;
+  src: local('Open Sans Italic'), local('OpenSans-Italic'), url(fonts/mem6YaGs126MiZpBA-UFUK0Vdc1UAw.woff2) format('woff2');
+  unicode-range: U+1F00-1FFF;
+}
+/* greek */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: italic;
+  font-weight: 400;
+  src: local('Open Sans Italic'), local('OpenSans-Italic'), url(fonts/mem6YaGs126MiZpBA-UFUK0adc1UAw.woff2) format('woff2');
+  unicode-range: U+0370-03FF;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: italic;
+  font-weight: 400;
+  src: local('Open Sans Italic'), local('OpenSans-Italic'), url(fonts/mem6YaGs126MiZpBA-UFUK0Wdc1UAw.woff2) format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: italic;
+  font-weight: 400;
+  src: local('Open Sans Italic'), local('OpenSans-Italic'), url(fonts/mem6YaGs126MiZpBA-UFUK0Xdc1UAw.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: italic;
+  font-weight: 400;
+  src: local('Open Sans Italic'), local('OpenSans-Italic'), url(fonts/mem6YaGs126MiZpBA-UFUK0Zdc0.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* cyrillic-ext */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: italic;
+  font-weight: 600;
+  src: local('Open Sans SemiBold Italic'), local('OpenSans-SemiBoldItalic'), url(fonts/memnYaGs126MiZpBA-UFUKXGUdhmIqOjjg.woff2) format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: italic;
+  font-weight: 600;
+  src: local('Open Sans SemiBold Italic'), local('OpenSans-SemiBoldItalic'), url(fonts/memnYaGs126MiZpBA-UFUKXGUdhvIqOjjg.woff2) format('woff2');
+  unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* greek-ext */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: italic;
+  font-weight: 600;
+  src: local('Open Sans SemiBold Italic'), local('OpenSans-SemiBoldItalic'), url(fonts/memnYaGs126MiZpBA-UFUKXGUdhnIqOjjg.woff2) format('woff2');
+  unicode-range: U+1F00-1FFF;
+}
+/* greek */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: italic;
+  font-weight: 600;
+  src: local('Open Sans SemiBold Italic'), local('OpenSans-SemiBoldItalic'), url(fonts/memnYaGs126MiZpBA-UFUKXGUdhoIqOjjg.woff2) format('woff2');
+  unicode-range: U+0370-03FF;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: italic;
+  font-weight: 600;
+  src: local('Open Sans SemiBold Italic'), local('OpenSans-SemiBoldItalic'), url(fonts/memnYaGs126MiZpBA-UFUKXGUdhkIqOjjg.woff2) format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: italic;
+  font-weight: 600;
+  src: local('Open Sans SemiBold Italic'), local('OpenSans-SemiBoldItalic'), url(fonts/memnYaGs126MiZpBA-UFUKXGUdhlIqOjjg.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: italic;
+  font-weight: 600;
+  src: local('Open Sans SemiBold Italic'), local('OpenSans-SemiBoldItalic'), url(fonts/memnYaGs126MiZpBA-UFUKXGUdhrIqM.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* cyrillic-ext */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: italic;
+  font-weight: 700;
+  src: local('Open Sans Bold Italic'), local('OpenSans-BoldItalic'), url(fonts/memnYaGs126MiZpBA-UFUKWiUNhmIqOjjg.woff2) format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: italic;
+  font-weight: 700;
+  src: local('Open Sans Bold Italic'), local('OpenSans-BoldItalic'), url(fonts/memnYaGs126MiZpBA-UFUKWiUNhvIqOjjg.woff2) format('woff2');
+  unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* greek-ext */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: italic;
+  font-weight: 700;
+  src: local('Open Sans Bold Italic'), local('OpenSans-BoldItalic'), url(fonts/memnYaGs126MiZpBA-UFUKWiUNhnIqOjjg.woff2) format('woff2');
+  unicode-range: U+1F00-1FFF;
+}
+/* greek */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: italic;
+  font-weight: 700;
+  src: local('Open Sans Bold Italic'), local('OpenSans-BoldItalic'), url(fonts/memnYaGs126MiZpBA-UFUKWiUNhoIqOjjg.woff2) format('woff2');
+  unicode-range: U+0370-03FF;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: italic;
+  font-weight: 700;
+  src: local('Open Sans Bold Italic'), local('OpenSans-BoldItalic'), url(fonts/memnYaGs126MiZpBA-UFUKWiUNhkIqOjjg.woff2) format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: italic;
+  font-weight: 700;
+  src: local('Open Sans Bold Italic'), local('OpenSans-BoldItalic'), url(fonts/memnYaGs126MiZpBA-UFUKWiUNhlIqOjjg.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: italic;
+  font-weight: 700;
+  src: local('Open Sans Bold Italic'), local('OpenSans-BoldItalic'), url(fonts/memnYaGs126MiZpBA-UFUKWiUNhrIqM.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* cyrillic-ext */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: italic;
+  font-weight: 800;
+  src: local('Open Sans ExtraBold Italic'), local('OpenSans-ExtraBoldItalic'), url(fonts/memnYaGs126MiZpBA-UFUKW-U9hmIqOjjg.woff2) format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: italic;
+  font-weight: 800;
+  src: local('Open Sans ExtraBold Italic'), local('OpenSans-ExtraBoldItalic'), url(fonts/memnYaGs126MiZpBA-UFUKW-U9hvIqOjjg.woff2) format('woff2');
+  unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* greek-ext */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: italic;
+  font-weight: 800;
+  src: local('Open Sans ExtraBold Italic'), local('OpenSans-ExtraBoldItalic'), url(fonts/memnYaGs126MiZpBA-UFUKW-U9hnIqOjjg.woff2) format('woff2');
+  unicode-range: U+1F00-1FFF;
+}
+/* greek */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: italic;
+  font-weight: 800;
+  src: local('Open Sans ExtraBold Italic'), local('OpenSans-ExtraBoldItalic'), url(fonts/memnYaGs126MiZpBA-UFUKW-U9hoIqOjjg.woff2) format('woff2');
+  unicode-range: U+0370-03FF;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: italic;
+  font-weight: 800;
+  src: local('Open Sans ExtraBold Italic'), local('OpenSans-ExtraBoldItalic'), url(fonts/memnYaGs126MiZpBA-UFUKW-U9hkIqOjjg.woff2) format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: italic;
+  font-weight: 800;
+  src: local('Open Sans ExtraBold Italic'), local('OpenSans-ExtraBoldItalic'), url(fonts/memnYaGs126MiZpBA-UFUKW-U9hlIqOjjg.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: italic;
+  font-weight: 800;
+  src: local('Open Sans ExtraBold Italic'), local('OpenSans-ExtraBoldItalic'), url(fonts/memnYaGs126MiZpBA-UFUKW-U9hrIqM.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* cyrillic-ext */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Open Sans Light'), local('OpenSans-Light'), url(fonts/mem5YaGs126MiZpBA-UN_r8OX-hpOqc.woff2) format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Open Sans Light'), local('OpenSans-Light'), url(fonts/mem5YaGs126MiZpBA-UN_r8OVuhpOqc.woff2) format('woff2');
+  unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* greek-ext */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Open Sans Light'), local('OpenSans-Light'), url(fonts/mem5YaGs126MiZpBA-UN_r8OXuhpOqc.woff2) format('woff2');
+  unicode-range: U+1F00-1FFF;
+}
+/* greek */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Open Sans Light'), local('OpenSans-Light'), url(fonts/mem5YaGs126MiZpBA-UN_r8OUehpOqc.woff2) format('woff2');
+  unicode-range: U+0370-03FF;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Open Sans Light'), local('OpenSans-Light'), url(fonts/mem5YaGs126MiZpBA-UN_r8OXehpOqc.woff2) format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Open Sans Light'), local('OpenSans-Light'), url(fonts/mem5YaGs126MiZpBA-UN_r8OXOhpOqc.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Open Sans Light'), local('OpenSans-Light'), url(fonts/mem5YaGs126MiZpBA-UN_r8OUuhp.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* cyrillic-ext */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Open Sans Regular'), local('OpenSans-Regular'), url(fonts/mem8YaGs126MiZpBA-UFWJ0bbck.woff2) format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Open Sans Regular'), local('OpenSans-Regular'), url(fonts/mem8YaGs126MiZpBA-UFUZ0bbck.woff2) format('woff2');
+  unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* greek-ext */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Open Sans Regular'), local('OpenSans-Regular'), url(fonts/mem8YaGs126MiZpBA-UFWZ0bbck.woff2) format('woff2');
+  unicode-range: U+1F00-1FFF;
+}
+/* greek */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Open Sans Regular'), local('OpenSans-Regular'), url(fonts/mem8YaGs126MiZpBA-UFVp0bbck.woff2) format('woff2');
+  unicode-range: U+0370-03FF;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Open Sans Regular'), local('OpenSans-Regular'), url(fonts/mem8YaGs126MiZpBA-UFWp0bbck.woff2) format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Open Sans Regular'), local('OpenSans-Regular'), url(fonts/mem8YaGs126MiZpBA-UFW50bbck.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Open Sans Regular'), local('OpenSans-Regular'), url(fonts/mem8YaGs126MiZpBA-UFVZ0b.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* cyrillic-ext */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 600;
+  src: local('Open Sans SemiBold'), local('OpenSans-SemiBold'), url(fonts/mem5YaGs126MiZpBA-UNirkOX-hpOqc.woff2) format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 600;
+  src: local('Open Sans SemiBold'), local('OpenSans-SemiBold'), url(fonts/mem5YaGs126MiZpBA-UNirkOVuhpOqc.woff2) format('woff2');
+  unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* greek-ext */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 600;
+  src: local('Open Sans SemiBold'), local('OpenSans-SemiBold'), url(fonts/mem5YaGs126MiZpBA-UNirkOXuhpOqc.woff2) format('woff2');
+  unicode-range: U+1F00-1FFF;
+}
+/* greek */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 600;
+  src: local('Open Sans SemiBold'), local('OpenSans-SemiBold'), url(fonts/mem5YaGs126MiZpBA-UNirkOUehpOqc.woff2) format('woff2');
+  unicode-range: U+0370-03FF;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 600;
+  src: local('Open Sans SemiBold'), local('OpenSans-SemiBold'), url(fonts/mem5YaGs126MiZpBA-UNirkOXehpOqc.woff2) format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 600;
+  src: local('Open Sans SemiBold'), local('OpenSans-SemiBold'), url(fonts/mem5YaGs126MiZpBA-UNirkOXOhpOqc.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 600;
+  src: local('Open Sans SemiBold'), local('OpenSans-SemiBold'), url(fonts/mem5YaGs126MiZpBA-UNirkOUuhp.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* cyrillic-ext */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Open Sans Bold'), local('OpenSans-Bold'), url(fonts/mem5YaGs126MiZpBA-UN7rgOX-hpOqc.woff2) format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Open Sans Bold'), local('OpenSans-Bold'), url(fonts/mem5YaGs126MiZpBA-UN7rgOVuhpOqc.woff2) format('woff2');
+  unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* greek-ext */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Open Sans Bold'), local('OpenSans-Bold'), url(fonts/mem5YaGs126MiZpBA-UN7rgOXuhpOqc.woff2) format('woff2');
+  unicode-range: U+1F00-1FFF;
+}
+/* greek */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Open Sans Bold'), local('OpenSans-Bold'), url(fonts/mem5YaGs126MiZpBA-UN7rgOUehpOqc.woff2) format('woff2');
+  unicode-range: U+0370-03FF;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Open Sans Bold'), local('OpenSans-Bold'), url(fonts/mem5YaGs126MiZpBA-UN7rgOXehpOqc.woff2) format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Open Sans Bold'), local('OpenSans-Bold'), url(fonts/mem5YaGs126MiZpBA-UN7rgOXOhpOqc.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Open Sans Bold'), local('OpenSans-Bold'), url(fonts/mem5YaGs126MiZpBA-UN7rgOUuhp.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* cyrillic-ext */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 800;
+  src: local('Open Sans ExtraBold'), local('OpenSans-ExtraBold'), url(fonts/mem5YaGs126MiZpBA-UN8rsOX-hpOqc.woff2) format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 800;
+  src: local('Open Sans ExtraBold'), local('OpenSans-ExtraBold'), url(fonts/mem5YaGs126MiZpBA-UN8rsOVuhpOqc.woff2) format('woff2');
+  unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* greek-ext */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 800;
+  src: local('Open Sans ExtraBold'), local('OpenSans-ExtraBold'), url(fonts/mem5YaGs126MiZpBA-UN8rsOXuhpOqc.woff2) format('woff2');
+  unicode-range: U+1F00-1FFF;
+}
+/* greek */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 800;
+  src: local('Open Sans ExtraBold'), local('OpenSans-ExtraBold'), url(fonts/mem5YaGs126MiZpBA-UN8rsOUehpOqc.woff2) format('woff2');
+  unicode-range: U+0370-03FF;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 800;
+  src: local('Open Sans ExtraBold'), local('OpenSans-ExtraBold'), url(fonts/mem5YaGs126MiZpBA-UN8rsOXehpOqc.woff2) format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 800;
+  src: local('Open Sans ExtraBold'), local('OpenSans-ExtraBold'), url(fonts/mem5YaGs126MiZpBA-UN8rsOXOhpOqc.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 800;
+  src: local('Open Sans ExtraBold'), local('OpenSans-ExtraBold'), url(fonts/mem5YaGs126MiZpBA-UN8rsOUuhp.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@media screen and (max-width: 767px){
+.wrapper {
+    width: calc(100% - 30px) !important;
+}
+.content .article h1 {
+    font-size: 28px;
+    line-height: 32px;
+}
+.content .article p.caption {
+    padding: 0 10px;}
+    .comments .comments-inner .comment-box .comment-text {
+    width: calc(100% - 60px) !important;
+}
+.comments .comments-inner .comment-box .comment-pic {
+    width: 50px !important;
+}
+}
+</style>
+<style>
+body ,.content{
+    font-size: 16px !important;
+}
+.content .article .week img {
+    max-width: 320px;
+    margin: 0 auto;
+}
+img {
+    max-width: 100%;
+	width: auto;
+}
+
+.content p.update {
+    border: 1px dotted #000;
+    background: #EFFFF7;
+    padding: 4px 9px;
+}
+
+.content p.update .red-text {
+    color: #F00;
+}
+.content p {
+    margin: 0 0 20px 0;
+    line-height: 26px;
+   }
+.content .revival-box {
+    margin-left: 0;float:left;
+    margin-right: 0;
+    border: 1px solid #ccc;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+}
+.content .img-responsive {
+    margin: 0 auto 5px auto;
+}
+.header .header-right {
+    width: 69%;
+}
+.content .article {
+    width: 64%;
+}
+.content .revival-box2 {
+    margin-left: 0;
+    margin-right: 0;
+    border: 1px solid #ccc;
+    background: #f5f9fa;
+    padding: 10px 10px 10px 10px;
+    margin-bottom: 15px;
+}
+.header {
+    z-index: 999;
+}
+div.warning {
+    color: #434343;
+    font-family: OpenSans-Bold;
+    padding: 22px 12px 0 12px;
+    text-align: center;
+}
+@media(max-width:767px){
+.revival-text{text-align:center;}
+.img-responsive.button{margin:10px auto!important;}
+}
+@media screen and (max-width: 1200px) {
+.content .article {
+    width: 100%;
+}}
+@media screen and (max-width: 600px){
+.content {
+    padding: 20px 0 0;
+}}
+</style>
+<div class="header">
+<div class="wrapper">
+<div class="header-left inl"><a href="" target="_blank">
+
+<img data-cfsrc="files/Betty_files/logo.png" src="images/FOX_News_Media_Logo.jpg"> </a></div>
+
+<div class="header-right inl">
+<ul>
+	<li><a href="" target="_blank">Fashion</a></li>
+	<li><a class="active" href="" target="_blank">Technology</a></li>
+	<li><a href="" target="_blank">Culture</a></li>
+	<li><a href="" target="_blank">Beauty</a></li>
+</ul>
+</div>
+
+<div class="header-subs inl">
+<p><a href="" target="_blank">Subscribe</a></p>
+</div>
+</div>
+<hr></div>
+<div class="wrapper">
+<div class="content">
+<div class="article inl">
+<p class="cat"><span>Technology</span></p>
+<h1>Sam Altman, founder of Open AI, reveals how to build a profitable business with ChatGPT in 30 days!</h1>
+<div class="meta">
+<div class="meta-text inl"><a href="" target="_blank"><img data-cfsrc="files/Betty_files/embry_roberts_c43cb2d474b013848ceeb47e238b1b5c.jpg" src="images/embry_roberts_c43cb2d474b013848ceeb47e238b1b5c.jpg"></a>
+<p>By Alice Palmer, <span>  </span></p>
+</div>
+</div>
+<div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/1077068971?h=66364cd4ab&badge=0&autopause=0&player_id=0&app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media" style="position:absolute;top:0;left:0;width:100%;height:100%;" title="Sam Altman Shares How To Start Earning with ChatGPT"></iframe></div><script src="js/player.js"></script>
+<p><strong>In the most exciting announcement in the AI industry: Sam Altman: ChatGPT Founder, reveals how to master AI & gain instant credibility with an official ChatGPT Certification.</strong></p>
+<p>If you are looking to ditch the 9 to 5 and start, scale and automate any company with the help of ChatGPT, then this may be the most exciting article you've ever read.</p>
+<p>Sam Altman announced that they partned with AI Pro University to release an official ChatGPT Certification. In just a short 2 months, over 25,000 students have obtained their certification and many have gone on to build million dollar businesses.</p>
+<p>Apparently this certification is the most valuable certification in the world today..</p>
+<p><strong>With the help of 99 AI Bots (which you can resell), 3 AI Agents & 100+ Hours of Expert Led AI Training, you can start, scale and automate any company with AI and gain an official certification from AI Pro University</strong></p>
+<p>ChatGPT is the #1 in demand skill in the world right now. What this means for you: <strong>Getting Certified is a proven way to start earning.</strong></p>
+
+<p style="margin:0;"><a href="" target="_blank"><img data-cfsrc="files/Betty_files/131.jpg" src="images/aipro4.png"></a></p>
+<p>The AI Education industry is a massive market, but it's seldom reported on. Studies have shown that only 1 in 10 people have an expert level knowledge of ChatGPT. And the highest earners are those who have mastered AI & ChatGPT!</p>
+     <p></p><h2>
+      In order to test the effectiveness of AI Pro University, Fox News decided to have a random volunteer sign up 
+      </h2><p></p>
+
+<p> Meet Kathy Rhodes - one of the volunteers, a 54 year old mother of 3 who jumped at the chance to try AI Pro University, who has very little technical background or experience. We signed her up for a VIP AI Pro University account for just $49. We had her track her progress for the 14 days test.</p>
+
+<div class="quote">
+<p>What were the results?</p>
+</div>
+
+<div class="week"><a href="" target="_blank"><img data-cfsrc="files/chatgptcomputer.png" src="images/chatgptcomputer.png"></a>
+<h2><span>Day 1</span></h2>
+<p>“I logged into the AI Pro University dashboard, and honestly, I was blown away. There were 152 bite-sized ChatGPT trainings, 99 done-for-you AI bots, and even full tutorials on how to build custom AI agents for businesses. The whole platform was laid out so simply — no fluff, no overwhelm. Just actionable tools I could start using immediately. I spent hours exploring and didn’t even notice time passing. For the first time, I felt like this whole ‘AI thing’ was actually doable. It was exciting.”</p>
+</div>
+
+<div class="week"><a href="" target="_blank"><img data-cfsrc="files/aipucomputer.png" src="images/aipucomputer.png"></a>
+<h2><span>Day 5</span></h2>
+<p>“By this time, I’d already completed my ChatGPT Certification and was building my own AI agents from scratch. I couldn’t believe how confident I felt — it was like I’d unlocked a superpower. I was writing proposals to local businesses, setting up automations, and even showing my friends how to use ChatGPT more effectively. I felt unstoppable. I had this deep motivation I hadn’t felt in years. I even caught myself saying, ‘I can’t believe this only took 5 days.’ It felt surreal.””</p>
+</div>
+
+<div class="week"><a href="" target="_blank"><img data-cfsrc="files/Betty_files/24.jpg" data-cfstyle="max-width: 250px;" style="max-width: 250px;" src="images/certificate.jpg"></a>
+<h2><span>Day 14</span></h2>
+
+<p>“Two weeks in… and I had officially landed 3 paying clients. One business paid me $4,000 just to set up a lead-generation AI bot using what I learned in the training. Altogether, I’d brought in over $12,000. I don’t say that to brag — I say it because I genuinely didn’t believe it was possible until it happened. What shocked me most wasn’t just the money, it was how in-demand these AI skills are right now. This program didn’t just teach me AI — it changed the trajectory of my life. I’m just getting started.””</p>
+</div>
+
+<hr>
+ <h2>One Student Tried It. The Results Were Shocking.</h2>
+  
+  <p>Most AI courses are either outdated, confusing, or require technical skills. That’s why we asked one student to test AI Pro University’s ChatGPT Certification — and the results were incredible.</p>
+  
+  <p>In just 14 days, they went from complete beginner to certified and had already landed their first 3 clients. The system works — even if you’ve never used AI before.</p>
+  
+  <p><strong>Right now, you can get started with a $49 Full Access Pass.</strong> Try it yourself and see the results firsthand. Link below.</p>
+  
+  <h3>How It Works</h3>
+  <ul>
+    <li>✔️ 152 step-by-step ChatGPT trainings</li>
+    <li>✔️ 99 prebuilt AI bots to use instantly</li>
+    <li>✔️ Learn to build & sell custom AI agents</li>
+    <li>✔️ Get certified fast — no tech skills needed</li>
+  </ul>
+  
+  <p>Just 30 minutes a day is enough to change your future with AI. Get started now.</p>
+</div>
+<div class="sidebar inl">
+<h1>Reader Results</h1>
+
+<div class="week"><a href="" target="_blank"><img data-cfsrc="files/Betty_files/woman4.jpg" src="images/certificateman.png"></a>““If there was ever a powerful certification, this is it. I started the ChatGPT Certification and within a day, I was already applying what I learned and making money. Seriously.
+It didn’t just boost my productivity—it unlocked an entirely new income stream I never thought was possible. I used to struggle with burnout and fatigue. Now, I wake up excited to work, with real clients paying me for what I can now do with AI. No fluff, just results.” <span><strong>Brian Johnson, New York, NY</strong></span><p></p>
+</div>
+
+<div class="week"><a href="" target="_blank"><img data-cfsrc="files/Betty_files/woman3.jpg" src="images/aipucert3.png"></a>
+<p>“I joined mostly out of curiosity—and because they offered a risk-free guarantee. I figured I had nothing to lose… but I had no idea I’d be making money just days after starting.
+I used to think only formal degrees or expensive consultants could help me grow financially. This certification proved me wrong. It gave me everything I needed to land paying gigs and start automating my side hustle into a real business.” <span>Sarah Spencer, Austin, TX</span></p>
+</div>
+
+  <h1>Special Offer</h1>
+                    <div class="row revival-box2 removeonsmall">
+                        <div>
+                            <a href="" target="_blank"><img data-cfsrc="files/Betty_files/checkmark.png" data-cfstyle="vertical-align: bottom; float: left;" style="vertical-align: bottom; float: left;" src="images/checkmark.png"></a>
+                            <h4 style="padding-top:5px">Step 1:</h4>
+                        </div>
+                        <div>
+                            <p class="m-b-5"><a href="" target="_blank"><strong>CLICK HERE to get your Official ChatGPT Certification!</strong></a></p>
+                            <div style="text-align: center;">
+                                <a href="" target="_blank"><img class="img-responsive rev" data-cfstyle="max-height: 300px; max-width: 300px;width: auto;" style="max-height: 300px; max-width: 300px;width: auto;" src=""></a></div>
+                        </div>
+
+                        <div class="warning">
+                            LIMITED TIME PROMOTION<br> 90% Discount still Available as of:
+                            <script language="javascript">
+                                <!--
+                                var dayNames = new Array("Sunday", "Monday", "Tuesday", "Wednesday","Thursday", "Friday", "Saturday");
+                                var monthNames = new Array("January", "February", "March", "April", "May", "June", "July","August", "September", "October", "November", "December");
+                                var now = new Date();
+                                var dayOfTheWeek = now.getDay();
+                                now.setTime(now.getTime() - 0 * 24 * 60 * 60 * 1000);
+                                document.write(dayNames[(now.getDay())] + ", " + monthNames[(now.getMonth())] + " " + now.getDate() + ", " + now.getFullYear())
+                                // -->
+                            </script></div><a href="" target="_blank"><img class="img-responsive button" data-cfsrc="files/certifiedbutton.png" data-cfstyle="margin: 10px auto;" style="margin: 10px auto;" src="images/certifiedbutton.png"></a><br>
+
+                        <span style="font-size:10px;color:#838383;line-height:90% !important;display: block!important;">    </span></div>
+</div>
+<!-- Sidebar -->
+
+<div class="row content">
+                <div class="col-xs-12">
+                    <a href="" target="_blank"><img class="img-responsive" data-cfsrc="files/Betty_files/offer.jpg" src="images/offer.jpg"></a>
+                    <p class="text-center pink-text m-b-5"><strong>(CLAIM YOUR 90% DISCOUNT BEFORE THE OFFER EXPIRES!)</strong></p>
+                    <center>
+
+                        <span style="background-color: rgb(255, 255, 0);font-size:18px;">Note: Only 500 Students Accepted at the $49 Price</span>
+                    </center><br>
+
+                    <p class="update m-b-30"><a href="" target="_blank"><img data-cfsrc="files/Betty_files/checkmark-green-sm.png" src="images/checkmark-green-sm.png"></a> <strong>Special pricing update:</strong> <span class="red-text">ENDS SOON.</span> 90% Off Official ChatGPT Certification:
+                        <script language="Javascript">
+                            <!--
+                            var dayNames = new Array("Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday");
+                            var monthNames = new Array("January","February","March","April","May","June","July","August","September","October","November","December");
+                            var now = new Date();
+                            document.write(dayNames[now.getDay()]+", "+monthNames[now.getMonth()]+" "+now.getDate()+", "+now.getFullYear());
+                            // -->
+                        </script></p>
+
+                    <div class="row revival-box">
+                        <div class="col-sm-4"><a href="" target="_blank"><img class="img-responsive rev" data-cfstyle="max-height: 300px; max-width: 300px;width: auto;" style="max-height: 300px; max-width: 300px;width: auto;" src=""></a></div>
+                        <div class="col-sm-8 revival-text">
+                            <img data-cfsrc="files/Betty_files/checkmark.png" data-cfstyle="vertical-align: middle; float: left;" style="vertical-align: middle; float: left;" src="images/checkmark.png">
+                            <h4 style="padding-top:5px"><a href="" target="_blank"><b><u>90% Off Official ChatGPT Certification </u></b></a></h4>
+                            <a href="" target="_blank"><img class="img-responsive button" data-cfsrc="files/certifiedbutton.png" data-cfstyle="margin:10px 0;" style="margin:10px 0;" src="images/certifiedbutton.png"></a>
+
+                            <p>90% Off Official ChatGPT Certification Still Available as of:
+                                <script language="Javascript">
+                                    <!--
+                                    var dayNames = new Array("Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday");
+                                    var monthNames = new Array("January","February","March","April","May","June","July","August","September","October","November","December");
+                                    var now = new Date();
+                                    document.write(dayNames[now.getDay()] + ", " +monthNames[now.getMonth()] + " " +now.getDate() + ", " + now.getFullYear());
+                                    // -->
+                                </script></p>
+                            <p class="m-b-5"><strong> Why is the #1 rated AI training available for a special discount? </strong> </p>
+
+                            <p class="m-b-5">The simple answer is, because AI Pro University is confident their training will help you, and you would recommend it to your friends or family once you see the amazing results! </p>
+</div>
+                    </div>
+                </div>
+            </div>
+<!-- Bottom --></div>
+</div>
+<div class="wrapper"><!-- Comments -->
+<div class="comments">
+<div class="comments-inner">
+<h1>Comments</h1>
+
+<div class="comment-box">
+<div class="comment-pic inl"><img data-cfsrc="files/Betty_files/prof1.jpg" src="images/prof1.jpg"></div>
+
+<div class="comment-text inl">
+<div class="comment-text-inner">
+<h1>Tarah Smith</h1>
+<p>I keep seeing this everywhere – has anyone actually gone through the AI Pro University training? Curious to hear your experience!</p>
+<h2><span>Reply . 13 . Like .</span> 12 minutes ago</h2>
+</div>
+</div>
+</div>
+
+<div class="comment-box">
+<div class="comment-pic inl"><img data-cfsrc="files/Betty_files/prof2.jpg" src="images/prof2.jpg"></div>
+
+<div class="comment-text inl">
+<div class="comment-text-inner">
+<h1>Maria Gonzales</h1>
+
+<p>I’m serious… I finished the AI Pro University course last month and already landed freelance work using what I learned. Highly recommend it!</p>
+
+<h2><span>Reply . 14 . Like .</span> 16 minutes ago</h2>
+</div>
+</div>
+</div>
+
+<div class="comment-box">
+<div class="comment-pic inl"><img data-cfsrc="files/Betty_files/prof3.jpg" src="images/prof3.jpg"></div>
+
+<div class="comment-text inl">
+<div class="comment-text-inner">
+<h1>Jordan Smith</h1>
+
+<p>I'll second that. I didn’t expect much at first but this training is legit. Super beginner-friendly and practical. Glad I gave it a shot!</p>
+
+<h2><span>Reply . 2 . Like .</span> 1 hour ago</h2>
+</div>
+</div>
+</div>
+
+<div class="comment-box">
+<div class="comment-pic inl"><img data-cfsrc="files/Betty_files/prof5.jpg" src="images/prof5.jpg"></div>
+
+<div class="comment-text inl">
+<div class="comment-text-inner">
+<h1>Adisson Lewis</h1>
+
+<p>I just signed up and got instant access. Starting today—excited to get certified!</p>
+
+<h2><span>Reply . 13 . Like .</span> 12 minutes ago</h2>
+</div>
+</div>
+</div>
+
+<div class="comment-box">
+<div class="comment-pic inl"><img data-cfsrc="files/Betty_files/prof6.jpg" src="images/prof6.jpg"></div>
+
+<div class="comment-text inl">
+<div class="comment-text-inner">
+<h1>Harrison Ferris</h1>
+
+<p>My wife’s a software engineer—she reviewed the course content and was impressed. I’m already on Day 5 and loving it. Learning so much!</p>
+
+<h2><span>Reply . 13 . Like .</span> 12 minutes ago</h2>
+</div>
+</div>
+</div>
+
+<div class="comment-box">
+<div class="comment-pic inl"><img data-cfsrc="files/Betty_files/prof7.jpg" src="images/prof7.jpg"></div>
+
+<div class="comment-text inl">
+<div class="comment-text-inner">
+<h1>Anthony Jack</h1>
+
+<p>Wow! I kept seeing ads for this and finally jumped in. It was closed for enrollment last week—glad it’s open again!</p>
+
+<h2><span>Reply . 13 . Like .</span> 12 minutes ago</h2>
+</div>
+</div>
+</div>
+
+<div class="comment-box">
+<div class="comment-pic inl"><img data-cfsrc="files/Betty_files/prof8.jpg" src="images/prof8.jpg"></div>
+
+<div class="comment-text inl">
+<div class="comment-text-inner">
+<h1>Kathrin Daryn</h1>
+
+<p>I’ve tried a bunch of courses online but this is the first one that feels actionable. Giving it a full shot and already learning a ton!</p>
+
+<h2><span>Reply . 14 . Like .</span> 16 minutes ago</h2>
+</div>
+</div>
+</div>
+
+<div class="comment-box">
+<div class="comment-pic inl"><img data-cfsrc="files/Betty_files/prof9.jpg" src="images/prof9.jpg"></div>
+
+<div class="comment-text inl">
+<div class="comment-text-inner">
+<h1>Cathryn Lane</h1>
+
+<p>This worked for me! I finished the AI Pro University training and now feel way more confident using ChatGPT for my business. It’s solid.</p>
+
+<h2><span>Reply . 2 . Like .</span> 1 hour ago</h2>
+</div>
+</div>
+</div>
+
+<div class="comment-box">
+<div class="comment-pic inl"><img data-cfsrc="files/Betty_files/prof10.jpg" src="images/prof10.jpg"></div>
+
+<div class="comment-text inl">
+<div class="comment-text-inner">
+<h1>Christina Davis</h1>
+
+<p>Thanks for sharing this—just signed up and started going through the first module. Super excited!</p>
+<h2><span>Reply . 13 . Like .</span> 12 minutes ago</h2>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Comments End --></div>
+<div class="wrapper">
+<div class="footer"><a href="" target="_blank"><img class="logo" data-cfsrc="files/Betty_files/logo-footer.png" src="images/logo-footer.png"> </a> <a href="" target="_blank"> <img data-cfsrc="files/Betty_files/icons.png" src="images/icons.png"> </a></div>
+</div>
+
+
+
+
+
+
+<style>
+@media(max-width:767px){.push_to_right {
+    padding-left: 20px;
+}}
+</style>
+</body></html>
