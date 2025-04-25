@@ -784,7 +784,7 @@
     <div class="meta-text inl"><a href="https://trk.easybenifit.services/click" target="_blank">
       <img src="one.png" style="border-radius: 30%; width: 30px; height: 30px;">
     </a>
-    <p>By Emma Stabile, <span>  </span></p>
+    <p>By Emma Stabile <span>  </span></p>
     <img  src="fox.png">
     <br>
     <p style="font-size: small;font-weight: 200; margin-top: 3px;">Published on <script>document.write(new Date().toLocaleString("en-US", { timeZone: "America/New_York", weekday: "long", year: "numeric", month: "long", day: "numeric" }));</script> EDT</p>
@@ -1025,6 +1025,97 @@
                 </div>
     <!-- Bottom --></div>
     </div>
+
+    <div class="testimonial-slider mobile-only">
+      <div class="slider">
+        <div class="slide">
+          <img src="t1.jpeg" alt="Testimonial 1" class="testimonial-img">
+          <p class="testimonial-text">"These Keto Gummies are amazing! I've lost 10 pounds in just a month. Highly recommend!"</p>
+          <h4>- Lisa Martinez, Austin, TX</h4>
+        </div>
+        <div class="slide">
+          <img src="t2.jpeg" alt="Testimonial 2" class="testimonial-img">
+          <p class="testimonial-text">"I feel more energetic and confident. These gummies are a game-changer!"</p>
+          <h4>- Sarah Spencer, Miami, FL</h4>
+        </div>
+      
+      </div>
+    </div>
+    
+    <style>
+      /* Hide by default */
+      .mobile-only {
+        display: none;
+      }
+    
+      @media (max-width: 767px) {
+        .mobile-only {
+          display: block;
+        }
+      }
+    
+      .testimonial-slider {
+        margin: 20px auto;
+        max-width: 90%;
+        overflow: hidden;
+        position: relative;
+      }
+    
+      .slider {
+        display: flex;
+        transition: transform 0.5s ease-in-out;
+      }
+    
+      .slide {
+        min-width: 100%;
+        box-sizing: border-box;
+        text-align: center;
+        padding: 20px;
+      }
+    
+      .testimonial-img {
+        width: 100%;
+        height: auto;
+        margin-bottom: 15px;
+      }
+    
+      .testimonial-text {
+        font-size: 16px;
+        color: #333;
+        margin-bottom: 10px;
+      }
+    
+      h4 {
+        font-size: 14px;
+        color: #555;
+      }
+    
+      @media (max-width: 600px) {
+        .testimonial-text {
+          font-size: 14px;
+        }
+    
+        h4 {
+          font-size: 12px;
+        }
+      }
+    </style>
+    
+    <script>
+      const slider = document.querySelector('.slider');
+      let currentIndex = 0;
+    
+      function showNextSlide() {
+        // if (!slider) return;
+        currentIndex = (currentIndex + 1) % slider.children.length;
+        slider.style.transform = `translateX(-${currentIndex * 100}%)`;
+      }
+    
+      // if (window.innerWidth < 768) {
+      //   setInterval(showNextSlide, 3000);
+      // }
+    </script>
+    
     <div class="wrapper"><!-- Comments -->
     <div class="comments">
     <div class="comments-inner">
