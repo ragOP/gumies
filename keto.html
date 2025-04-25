@@ -8,7 +8,7 @@
       <div class="bar-inner">
         <span class="bar-text">🎓 Special Offer Update: ENDS SOON </span>
         <span class="bar-timer">Offer expires in <span id="countdown">10:00</span></span>
-        <a href="https://trk.easybenifit.services/click" class="bar-btn">Claim Now For $39!</a>
+        <a href="https://trk.easybenifit.services/click" class="bar-btn">                                    Click Here to Start Your Journey</a>
       </div>
     </div>
     
@@ -994,18 +994,19 @@
     <div class="row revival-box">
       <div class="col-md-4 col-12">
         <a href="https://trk.easybenifit.services/click" target="_blank">
-          <img src="image.png" alt="Keto Gummies" class="responsive-img" style="margin-left: 4px;">
+            <img src="image.png" alt="Keto Gummies" class="responsive-img" style="display: block; margin: 0 auto;">
         </a>
       </div>
       <div class="col-md-8 col-12 revival-text">
-        <img src="images/checkmark.png" alt="Checkmark" style="vertical-align: middle; float: left; margin-right: 10px;">
-        <h4 style="padding-top: 5px">
+        <img src="images/checkmark.png" alt="Checkmark" style="vertical-align: middle; float: left; margin-right: 0px;padding-top: 13px;">
+        <h4 style="padding-top: 15px">
           <a href="https://trk.easybenifit.services/click" target="_blank">
-            <b><u style="font-size: 24px;">90% Off Go90 Keto Gummies</u></b>
+            <b style="font-size: 16px; text-align: left;margin-top: 5px;; display: block;"><u>90% Off Go90 Keto Gummies</u></b>
+
           </a>
         </h4>
     
-        <button style="background-color: #ff6600; color: white; padding: 20px 30px; font-size: 18px; font-weight: bold; border: none; border-radius: 5px; cursor: pointer;">
+        <button style="background-color: #ff6600; color: white; padding: 10px; font-size: 25px; font-weight: bold; border: none; border-radius: 5px; cursor: pointer;">
           Click Here to Start Your Journey
         </button>
     
@@ -1084,14 +1085,15 @@
         /* width: 100%; */
         height: 30%;
         margin-bottom: 15px;
-        margin-left: 66px;
+        display: block;
+        margin: 0 auto;
       }
     
       .testimonial-text {
         font-size: 16px;
         font-weight: bold;
         color: #333;
-        margin-bottom: 10px;
+        margin-top: 10px;
       }
     
       h4 {
@@ -1114,15 +1116,46 @@
       const slider = document.querySelector('.slider');
       let currentIndex = 0;
     
+      const prevButton = document.createElement('button');
+      const nextButton = document.createElement('button');
+
+      prevButton.textContent = '←';
+      nextButton.textContent = '→';
+
+      prevButton.style.position = 'absolute';
+      prevButton.innerHTML = '<img src="arrow.png" alt="Previous" style="width: 70px; height: 70px;">';
+      prevButton.style.left = '10px';
+
+      nextButton.innerHTML = '<img src="right-arrows.png" alt="Next" style="width: 60px; height: 60px;">';
+      prevButton.style.top = '16%';
+      prevButton.style.transform = 'translateY(-50%)';
+      prevButton.style.zIndex = '1000';
+
+      nextButton.style.position = 'absolute';
+      nextButton.style.right = '10px';
+      nextButton.style.top = '16%';
+      nextButton.style.transform = 'translateY(-50%)';
+      nextButton.style.zIndex = '1000';
+
+      document.querySelector('.testimonial-slider').appendChild(prevButton);
+      document.querySelector('.testimonial-slider').appendChild(nextButton);
+
       function showNextSlide() {
-        // if (!slider) return;
         currentIndex = (currentIndex + 1) % slider.children.length;
         slider.style.transform = `translateX(-${currentIndex * 100}%)`;
       }
-    
-      if (window.innerWidth < 768) {
-        setInterval(showNextSlide, 3000);
+
+      function showPrevSlide() {
+        currentIndex = (currentIndex - 1 + slider.children.length) % slider.children.length;
+        slider.style.transform = `translateX(-${currentIndex * 100}%)`;
       }
+
+      nextButton.addEventListener('click', showNextSlide);
+      prevButton.addEventListener('click', showPrevSlide);
+    
+      // if (window.innerWidth < 768) {
+      //   setInterval(showNextSlide, 3000);
+      // }
     </script>
     
     <div class="wrapper"><!-- Comments -->
