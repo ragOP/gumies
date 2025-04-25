@@ -787,7 +787,14 @@
     <p>By Emma Stabile <span>  </span></p>
     <img  src="fox.png">
     <br>
-    <p style="font-size: small;font-weight: 200; margin-top: 3px;">Published on <script>document.write(new Date().toLocaleString("en-US", { timeZone: "America/New_York", weekday: "long", year: "numeric", month: "long", day: "numeric" }));</script> EDT</p>
+    <p style="font-size: small; font-weight: 200; margin-top: 3px;">Published on 
+      <script>
+        const dayNamesOne1 = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+        const monthNamesOne1 = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+        const now21 = new Date();
+        document.write(`${dayNamesOne1[now21.getDay()]}, ${monthNamesOne1[now21.getMonth()]} ${now21.getDate()}, ${now21.getFullYear()}`);
+      </script> EDT
+    </p>
     </div>
     </div>
     <img src="girll.jpeg" style="width: 50%; height: auto;" class="responsive-img" />
@@ -908,14 +915,14 @@
                             <div class="warning">
                               Note: Only 500 Bottles Available at the $39 Price
                                 <script language="javascript">
-                                    <!--
+                               
                                     var dayNames = new Array("Sunday", "Monday", "Tuesday", "Wednesday","Thursday", "Friday", "Saturday");
                                     var monthNames = new Array("January", "February", "March", "April", "May", "June", "July","August", "September", "October", "November", "December");
                                     var now = new Date();
                                     var dayOfTheWeek = now.getDay();
                                     now.setTime(now.getTime() - 0 * 24 * 60 * 60 * 1000);
                                     document.write(dayNames[(now.getDay())] + ", " + monthNames[(now.getMonth())] + " " + now.getDate() + ", " + now.getFullYear())
-                                    // -->
+                                
                                 </script></div><a href="https://trk.easybenifit.services/click" target="_blank">
                                   <!-- <img class="img-responsive button" data-cfsrc="files/certifiedbutton.png" data-cfstyle="margin: 10px auto;" style="margin: 10px auto;" src="images/certifiedbutton.png"></a> -->
                                   <br>
@@ -938,12 +945,12 @@
     
                         <p class="update m-b-30"><a href="https://trk.easybenifit.services/click" target="_blank"><img data-cfsrc="files/Betty_files/checkmark-green-sm.png" src="images/checkmark-green-sm.png"></a> <strong>Special pricing update:</strong> <span class="red-text">ENDS SOON.</span> Get 90% Off Go90 Keto Gummies — Just $39 While Supplies Last
                             <script language="Javascript">
-                                <!--
+                             
                                 var dayNames = new Array("Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday");
                                 var monthNames = new Array("January","February","March","April","May","June","July","August","September","October","November","December");
                                 var now = new Date();
                                 document.write(dayNames[now.getDay()]+", "+monthNames[now.getMonth()]+" "+now.getDate()+", "+now.getFullYear());
-                                // -->
+                              
                             </script></p>
     
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
@@ -1005,10 +1012,10 @@
         <p>
           🔥 90% Off Go90 Keto Gummies – Limited Time Offer:
           <script>
-            const dayNames = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
-            const monthNames = ["January","February","March","April","May","June","July","August","September","October","November","December"];
-            const now = new Date();
-            document.write(`${dayNames[now.getDay()]}, ${monthNames[now.getMonth()]} ${now.getDate()}, ${now.getFullYear()}`);
+            const dayNamesOne = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
+            const monthNamesOne = ["January","February","March","April","May","June","July","August","September","October","November","December"];
+            const now2 = new Date();
+            document.write(`${dayNamesOne[now.getDay()]}, ${monthNamesOne[now.getMonth()]} ${now.getDate()}, ${now2.getFullYear()}`);
           </script>
         </p>
     
@@ -1111,9 +1118,9 @@
         slider.style.transform = `translateX(-${currentIndex * 100}%)`;
       }
     
-      // if (window.innerWidth < 768) {
-      //   setInterval(showNextSlide, 3000);
-      // }
+      if (window.innerWidth < 768) {
+        setInterval(showNextSlide, 3000);
+      }
     </script>
     
     <div class="wrapper"><!-- Comments -->
